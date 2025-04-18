@@ -1,0 +1,11 @@
+# Windows constants
+CREATE_SUSPENDED   = 0x00000004
+MEM_COMMIT         = 0x1000
+MEM_RESERVE        = 0x2000
+PAGE_READWRITE     = 0x04
+MEM_RELEASE        = 0x8000
+INFINITE           = 0xFFFFFFFF
+STILL_ACTIVE       = 259
+WH_CBT             = 5
+WM_NULL            = 0x0000
+ENV_VAR_SEPARATOR  = ";"
