@@ -28,7 +28,7 @@ You can use PyDll-Injector via the command line interface or as a library in you
 
 Install the package on your system:
 ```bash
-pip install pydll-injector ".[cli]"
+pip install pydll-injector[cli]
 ```
 
 You can now use PyDll-Injector from the command line like this:
