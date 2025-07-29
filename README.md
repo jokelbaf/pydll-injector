@@ -91,3 +91,7 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
+
+## License
+
+The project is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
