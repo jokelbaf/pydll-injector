@@ -54,11 +54,8 @@ def spawn_process(launcher: Launcher, env: Environment) -> Context:
     si.cb = ctypes.sizeof(si)
     pi = PROCESS_INFORMATION()
 
-    cmd_buffer = None
-    if launcher.cmd_line_args:
-        cmd_buffer = ctypes.create_string_buffer(
-            launcher.cmd_line_args.encode('mbcs')
-        )
+    full_cmdline = f'"{exe_path}" {launcher.cmd_line_args}'
+    cmd_buffer = ctypes.create_string_buffer(full_cmdline.encode('mbcs'))
 
     success = kernel32.CreateProcessA(
         exe_path.encode('mbcs'),
