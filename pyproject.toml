@@ -1,6 +1,6 @@
 [project]
 name = "pydll_injector"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python DLL injector for Windows."
 readme = "README.md"
 requires-python = ">=3.9"
